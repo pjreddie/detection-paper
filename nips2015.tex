@@ -3,6 +3,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{times}
+\usepackage{multirow}
 \usepackage{epsfig}
 \usepackage{graphicx}
 \usepackage[labelfont=bf]{caption}
@@ -174,12 +175,12 @@ Overfeat efficiently performs sliding window detection but it is still a disjoin
 
 \section{Training}
 
-   \begin{figure*}[t]
+   \begin{figure}[t]
       \centering
         \includegraphics[width=.8\linewidth]{transform}
       \caption{\textbf{The Coordinate System.} This image shows an example transformation from bounding box coordinates to the coordinates used by our output layer.}
       \label{transform}
-   \end{figure*}
+   \end{figure}
 
 We pretrain our convolutional layers on the ImageNet 1000-class competition dataset \cite{ILSVRC15}. For pretraining we use the first 20 convolutional layers from \ref{net} followed by a maxpooling layer and two fully connected layers. We train this network for approximately a week and achieve top-5 accuracy of 86\% on the ImageNet 2012 validation set.
 
@@ -205,7 +206,7 @@ We train the network for about 100 epochs on the training and validation data se
 
 Each grid cell predicts class probabilities for that area of the image. There are 49 cells with a possible 20 classes each yielding 980 predicted probabilities per image. Most of these will be probabilities will be zero since only a few obejects appear in any given image. Left unchecked, this imbalance pushes all of the probabilities to zero, leading to divergence during training.
 
-To overcome this, we add an extra variable to each grid location, the probability that any object exists in that location regardless of class. Thus instead of 20 class probabilities we have 1 "objectness" probability, $\Pr(\textrm{Object})$, and 20 conditional probabilities: $\Pr(\textrm{Airplane | Object})$, $\Pr(\textrm{Bicycle | Object})$, etc.
+To overcome this, we add an extra variable to each grid location, the probability that any object exists in that location regardless of class. Thus instead of 20 class probabilities we have 1 "objectness" probability, $\Pr(\textrm{Object})$, and 20 conditional probabilities: $\Pr(\textrm{Airplane} | \textrm{Object})$, $\Pr(\textrm{Bicycle} | \textrm{Object})$, etc.
 
 To get the unnormalized probability for an object class at a given location we simply multiply the "objectness" probability by the conditional class probability:
 
@@ -219,9 +220,7 @@ During later stages of training we optimize the unconditioned probabilities by p
 
 \section{Evaluation}
 
-We evaluate YOLO on the test sets for \textsc{Pascal} VOC 2010 and 2012. 
-
-\begin{table*}
+\begin{table}
 \tiny
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \begin{center}
@@ -232,7 +231,7 @@ We evaluate YOLO on the test sets for \textsc{Pascal} VOC 2010 and 2012.
 MR\_CNN\_S\_CNN & 70.7& 85.0& 79.6& 71.5& 55.3& 57.7& 76.0& 73.9& 84.6& 50.5& 74.3& 61.7& 85.5& 79.9& 81.7& 76.4& 41.0& 69.0& 61.2& 77.7& 72.1 \\
 DEEP\_ENS\_COCO &  70.1& 84.0& 79.4& 71.6& 51.9& 51.1& 74.1& 72.1& 88.6& 48.3& 73.4& 57.8& 86.1& 80.0& 80.7& 70.4& 46.6& 69.6& 68.8& 75.9& 71.4 \\
 \textbf{Fast R-CNN + YOLO} & 70.0 & 83.0 & 78.4 & 73.4 & 55.7 & 42.5 & 78.2 & 72.7 & 89.5 & 48.2 & 74.0 & 56.4 & 87.2 & 80.8 & 80.7 & 74.4 & 41.1 & 70.0 & 67.1 & 71.2 & 66.0 \\
-Nets on Conv. Feats. &68.8& 82.8& 79.0& 71.6& 52.3& 53.7& 74.1& 69.0& 84.9& 46.9& 74.3& 53.1& 85.0& 81.3& 79.5& 72.2& 38.9& 72.4& 59.5& 76.7& 68.1\\
+NoC &68.8& 82.8& 79.0& 71.6& 52.3& 53.7& 74.1& 69.0& 84.9& 46.9& 74.3& 53.1& 85.0& 81.3& 79.5& 72.2& 38.9& 72.4& 59.5& 76.7& 68.1\\
 NUS\_NIN\_C2000 & 63.8 & 80.2 & 73.8 &  61.9 &  43.7 &  43.0 &  70.3 &  67.6 &  80.7 &  41.9 &  69.7 &  51.7 &  78.2 &  75.2 &  76.9 &  65.1 &  38.6 &  68.3 &  58.0 &  68.7 &  63.3 \\
 BabyLearning &  63.2 &  78.0 &  74.2 &  61.3 &  45.7 &  42.7 &  68.2 &  66.8 &  80.2 &  40.6 &  70.0 &  49.8 &  79.0 &  74.5 &  77.9 &  64.0 &  35.3 &  67.9 &  55.7 &  68.7 &  62.6 \\
 R-CNN VGG BB &  62.4 &  79.6 &  72.7 &  61.9 &  41.2 &  41.9 &  65.9 &  66.4 &  84.6 &  38.5 &  67.2 &  46.7 &  82.0 &  74.8 &  76.0 &  65.2 &  35.6 &  65.4 &  54.2 &  67.4 &  60.3 \\
@@ -246,7 +245,48 @@ R-CNN & 49.6 & 68.1 & 63.8 & 46.1 & 29.4 & 27.9 & 56.6 & 57.0 & 65.9 & 26.5 & 48
 \end{tabularx}
 \end{center}
 \caption{\textbf{Results.} Ours is better.}
-\end{table*}
+\end{table}
+
+
+We present detection results for the \textsc{Pascal} VOC 2012 dataset and compare our mean average precision (mAP) and runtime to other top detection methods. We also perform error analysis on the VOC 2007 dataset and show that the errors are system makes are orthagonal to the errors made by proposal region methods like R-CNN. Finally we show that a combination of our method with Fast R-CNN gives a significant performance boost.
+
+\subsection{VOC 2012 Results}
+
+On the VOC 2012 test set we achieve 53.6 mAP. This is lower than the current state of the art, closer to R-CNN based methods that use AlexNet. These results highlight the differences between R-CNN based methods and YOLO. Our system struggles with small objects compared to it's closest competitors. On categories like \texttt{bottle}, \texttt{sheep}, and \texttt{tv/monitor} YOLO scores 8-10 percentage points lower than it's closest competitors. However, on other categories like \texttt{cat} and \texttt{horse} YOLO achieves significantly higher performance. We further investigate the source of these performance disparities in section~\ref{error}.
+
+\subsection{Speed}
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l|r|r|r|r}
+ & \multicolumn{4}{c}{VOC 2007}   \\
+ & mAP & Prediction Time & Images/Sec  & Relative Speed\\
+\hline
+YOLO & 58.8 & 110 sec & 45 fps & - \\
+R-CNN (Small VGG) & 60.2 & 14.4 hr & 0.09 fps & 500x \\
+Fast R-CNN (Small VGG) & 59.2 & 2.9 hr & 0.48 fps & 93x \\
+R-CNN (CaffeNet) & 58.5 & 12.2 hr & 0.11 fps & 409x \\
+Fast R-CNN (CaffeNet) & 57.1 & 2.8 hr & 0.48 fps & 93x \\
+\end{tabular}
+\end{center}
+\caption{\textbf{Results.} Ours is better.}
+\end{table}
+
+
+At test time YOLO processes images at 45 frames per second. This is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still almost 100x faster than Fast R-CNN.
+
+\subsection{VOC 2007 Error Analysis}
+\label{error}
+
+Using the methodology and tools of Hoiem et al. \cite{hoiem2012diagnosing} we analyze our performance on the VOC 2007 test set. We compare YOLO to Fast R-CNN using VGG-16, one of the highest performing object detectors.
+
+   \begin{figure}[t]
+      \centering
+        \includegraphics[width=.7\linewidth]{compare}
+      \caption{\textbf{Airplane False Positives: Fast R-CNN vs YOLO.} Fast R-CNN often mistakes background patches for airplanes. YOLO makes far fewer background mistakes but far more localization errors.}
+      \label{compare}
+   \end{figure}
+
 
 
 \section{Discussion}
