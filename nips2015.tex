@@ -120,12 +120,13 @@ The final output of our network is a $7 \times 7$ grid of predictions. Each grid
 
 \subsection{Training}
 
-   \begin{figure}[t]
-      \centering
-        \includegraphics[width=.8\linewidth]{transform}
-      \caption{\textbf{The Coordinate System.} This image shows an example transformation from bounding box coordinates to the coordinates used by our output layer. Left: We normalize width and height by the width and height of the image. Middle: We find the appropriate grid cell based on the center of the bounding box. Right: We calculate the center coordinate offsets relative to the position of the grid cell.}
-      \label{transform}
-   \end{figure}
+%
+%   \begin{figure}[t]
+%      \centering
+%        \includegraphics[width=.8\linewidth]{transform}
+%      \caption{\textbf{The Coordinate System.} This image shows an example transformation from bounding box coordinates to the coordinates used by our output layer. Left: We normalize width and height by the width and height of the image. Middle: We find the appropriate grid cell based on the center of the bounding box. Right: We calculate the center coordinate offsets relative to the position of the grid cell.}
+%      \label{transform}
+%   \end{figure}
 
 We pretrain our convolutional layers on the ImageNet 1000-class competition dataset \cite{ILSVRC15}. For pretraining we use the first 20 convolutional layers from Figure \ref{net} followed by a maxpooling layer and two fully connected layers. We train this network for approximately a week and achieve a top-5 accuracy of 86\% on the ImageNet 2012 validation set.
 
@@ -143,7 +144,8 @@ Our final layer predicts both class probabilities and bounding box coordinates. 
 
 We optimize for sum-squared error in the output of our model. We use sum-squared error because it is easy to optimize, however it does not perfectly align with our goal of maximizing average precision. It weights localization error equally with classification error which may not be ideal. To remedy this, we use a scaling factor $\lambda$ to adjust the weight given to error from coordinate predictions versus error from class probabilities. In our final model we use the scaling factor $\lambda = 4$.
 
-Sum-squared error also equally weights errors in large boxes and small boxes. Our error metric should reflect that small deviations in large boxes matter less than in small boxes. To partially address this we predict the square root of the bounding box width and height instead of the width and height directly. Figure \ref{transform} shows an example transformation of a bounding box from image coordinates to the coordinates used by YOLO.
+Sum-squared error also equally weights errors in large boxes and small boxes. Our error metric should reflect that small deviations in large boxes matter less than in small boxes. To partially address this we predict the square root of the bounding box width and height instead of the width and height directly. 
+%Figure \ref{transform} shows an example transformation of a bounding box from image coordinates to the coordinates used by YOLO.
 
 If cell $i$ predicts class probabilities $\hat{p}_i(\text{aeroplane}), \hat{p}_i(\text{bicycle})...$ and the bounding box $\hat{x}_i,\hat{y}_i, \hat{w}_i, \hat{h}_i$ then our full loss function for an example is:
 
@@ -261,14 +263,14 @@ On the VOC 2012 test set we achieve 53.6 mAP. This is lower than the current sta
 \scriptsize
 \begin{center}
 \begin{tabular}{lrrrr}
- & mAP & Time & Images/Sec & Run Time\\
+ & mAP & Time & FPS & Run Time\\
 \hline
 R-CNN (VGG-16) & 66.0 & 48.2 hr & 0.02 fps & 1500x \\
-Fast R-CNN (VGG-16) & 66.9 & 3.1 hr & 0.45 fps & 100x \\
+FR-CNN (VGG-16) & 66.9 & 3.1 hr & 0.45 fps & 100x \\
 R-CNN (Small VGG) & 60.2 & 14.4 hr & 0.09 fps & 500x \\
-Fast R-CNN (Small VGG) & 59.2 & 2.9 hr & 0.48 fps & 93x \\
-R-CNN (CaffeNet) & 58.5 & 12.2 hr & 0.11 fps & 409x \\
-Fast R-CNN (CaffeNet) & 57.1 & 2.8 hr & 0.48 fps & 93x \\
+FR-CNN (Small VGG) & 59.2 & 2.9 hr & 0.48 fps & 93x \\
+R-CNN (Caffe) & 58.5 & 12.2 hr & 0.11 fps & 409x \\
+FR-CNN (Caffe) & 57.1 & 2.8 hr & 0.48 fps & 93x \\
 YOLO & 58.8 & 110 sec & 45 fps & - \\
 \end{tabular}
 \end{center}
