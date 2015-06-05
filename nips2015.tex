@@ -69,7 +69,7 @@ Humans glance at an image and instantly know what objects are in the image, wher
 
 Convolutional neural networks (CNNs) achieve impressive performance on classification tasks at real-time speeds. Yet the best object detection systems stare at images for seconds and still make mistakes. These shortcomings directly result from how these systems approach object detection.
 
-Current systems repurpose classifiers to perform detection. To detect an object these systems take a classifier for that object and evaluate it at various locations and scales in a test image. Systems like deformable parts models (DPM) use a sliding window approach where the classifier is run at evenly spaced locations over the entire image \cite{lsvm-pami}. More recent approaches like R-CNN use region proposal methods to first generate potential bounding boxes in an image and then run the classifier on these proposed boxes. After classification, post-processing is used to refine the bounding box, eliminate duplicate or overlapping detections, and rescore the box based on other objects in the scene \cite{girshick2014rich}.
+Current systems repurpose classifiers to perform detection. To detect an object these systems take a classifier for that object and evaluate it at various locations and scales in a test image. Systems like deformable parts models (DPM) use a sliding window approach where the classifier is run at evenly spaced locations over the entire image \cite{lsvm-pami}. More recent approaches like R-CNN use region proposal methods to first generate potential bounding boxes in an image and then run a classifier on these proposed boxes. After classification, post-processing is used to refine the bounding box, eliminate duplicate detections, and rescore the box based on other objects in the scene \cite{girshick2014rich}.
 
 \begin{figure}[t]
 \begin{center}
@@ -85,7 +85,7 @@ Additionally, even a highly accurate classifier will produce false positives whe
 
 Finally, these detection pipelines rely on independent techniques at every stage that cannot be optimized jointly. A typical pipeline uses Selective Search for region proposals, a convolutional network for feature extraction, a collection of one-versus-all SVMs for classification, non-maximal suppression to reduce duplicates, and a linear model to adjust the final bounding box coordinates. Selective Search tries to maximize recall while the SVMs optimize for single class accuracy and the linear model learns from localization error.
 
-Our system is refreshingly simple. A single convolutional network simultaneously predicts multiple bounding boxes and class probabilities for those boxes. Our system enforces spatial diversity in the proposed bounding boxes without relying on non-maximal suppresion to eliminate deplicates. We train our network on full images to directly optimize detection performance. At test time, a single network evalution produces complete detections of multiple objects in multiple categories without any pre or post-processing.
+Our system is refreshingly simple. A single convolutional network simultaneously predicts multiple bounding boxes and class probabilities for those boxes. Our system enforces spatial diversity in the proposed bounding boxes without relying on non-maximal suppresion to eliminate duplicates. We train our network on full images to directly optimize detection performance. At test time, a single network evalution produces complete detections of multiple objects in multiple categories without any pre or post-processing.
 
 \section{Unified Detection}
 
@@ -125,7 +125,7 @@ The final output of our network is a $7 \times 7$ grid of predictions. Each grid
       \label{transform}
    \end{figure}
 
-We pretrain our convolutional layers on the ImageNet 1000-class competition dataset \cite{ILSVRC15}. For pretraining we use the first 20 convolutional layers from \ref{net} followed by a maxpooling layer and two fully connected layers. We train this network for approximately a week and achieve top-5 accuracy of 86\% on the ImageNet 2012 validation set.
+We pretrain our convolutional layers on the ImageNet 1000-class competition dataset \cite{ILSVRC15}. For pretraining we use the first 20 convolutional layers from figure \ref{net} followed by a maxpooling layer and two fully connected layers. We train this network for approximately a week and achieve a top-5 accuracy of 86\% on the ImageNet 2012 validation set.
 
 We then adapt the model to perform detection. We add four convolutional layers and two fully connected layers with randomly initialized weights. Detection often requires fine-grained visual information so we increase the input resolution of the network from $224 \times 224$ to $448 \times 448$.
 
@@ -139,7 +139,7 @@ Our final layer predicts both class probabilities and bounding box coordinates. 
     \end{cases}
 \end{equation}
 
-We optimize for sum-squared error in the output of our model. We chose sum-squared error because it is easy to optimize however it does not perfectly align with our actual goal of maximizing average precision. It weights localization error equally with classification error which may not be ideal. To remedy this, we use a scaling factor to adjust weight given to error from coordinate predictions versus error from class probabilities. In our final model we use a scaling factor of 4.
+We optimize for sum-squared error in the output of our model. We use sum-squared error because it is easy to optimize however it does not perfectly align with our goal of maximizing average precision. It weights localization error equally with classification error which may not be ideal. To remedy this, we use a scaling factor to adjust weight given to error from coordinate predictions versus error from class probabilities. In our final model we use a scaling factor of 4.
 
 Sum-squared error also equally weights errors in large boxes and small boxes. Our error metric should reflect that small deviations in large boxes matter less than in small boxes. To partially address this we predict the square root of the bounding box width and height instead of the width and height directly.
 
@@ -151,13 +151,13 @@ If cell $i$ predicts class probabilities $\hat{p}_i(\text{aeroplane}), \hat{p}_i
 
 Note that if there is no object in a cell we do not consider any loss from the bounding box coordinates predicted by that cell. In this case, there is no ground truth bounding box so we only penalize the associated probabilities with that region.
 
-We train the network for about 120 epochs on the training and validation data sets from \textsc{Pascal} VOC 2007 and 2012 as well as the test set from 2007, a total of 21k images. Throughout training we use a batch size of 64, a momentum of $0.9$ and a decay of $0.0005$. We use two learning rates during training: $10^{-2}$ and $10^{-3}$. Training diverges if we use the higher learning rate, $10^{-2}$, from the start. We use the lower rate, $10^{-3}$, for one epoch so that the randomly initialized weights in the final layers can settle to a reasonable value. Then we train with the following learning rate schedule: $10^{-2}$ for 80 epochs, and $10^{-3}$ for 40 epochs.
+We train the network for about 120 epochs on the training and validation data sets from \textsc{Pascal} VOC 2007 and 2012 as well as the test set from 2007, a total of 21k images. Throughout training we use a batch size of 64, a momentum of $0.9$ and a decay of $0.0005$. We use two learning rates during training: $10^{-2}$ and $10^{-3}$. Training diverges if we use the higher learning rate, $10^{-2}$, from the start. We use the lower rate, $10^{-3}$, for one epoch so that the randomly initialized weights in the final layers can settle to reasonable values. Then we train with the following learning rate schedule: $10^{-2}$ for 80 epochs, and $10^{-3}$ for 40 epochs.
 
 To avoid overfitting we use dropout and extensive data augmentation. A dropout layer with a probability $\Pr = .5$ after the first connected layer prevents co-adaptation between layers. For data augmentation we introduce random scaling and translations of up to 10\% of the original image size. We also randomly adjust the exposure and saturation of the image by up to a factor of 2.
 
 \subsubsection{Nuisance Variables}
 
-Each grid cell predicts class probabilities for that area of the image. There are 49 cells with a possible 20 classes each yielding 980 predicted probabilities per image. Most of these will be probabilities will be zero since only a few obejects appear in any given image. Left unchecked, this imbalance pushes all of the probabilities to zero, leading to divergence during training.
+Each grid cell predicts class probabilities for that area of the image. There are 49 cells with a possible 20 classes each yielding 980 predicted probabilities per image. Most of these probabilities will be zero since only a few objects appear in any given image. Left unchecked, this imbalance pushes all of the probabilities to zero, leading to divergence during training.
 
 To overcome this, we add an extra variable to each grid location, the probability that any object exists in that location regardless of class. Thus instead of 20 class probabilities we have 1 "objectness" probability, $\Pr(\textrm{Object})$, and 20 conditional probabilities: $\Pr(\textrm{Airplane} | \textrm{Object})$, $\Pr(\textrm{Bicycle} | \textrm{Object})$, etc.
 
@@ -175,7 +175,7 @@ During later stages of training we optimize the unconditioned probabilities by p
 
 Like most detection systems, our network has trouble precisely localizing small objects. While it may correctly predict that an object is present in an area of the image, if it does not predict a precise enough bounding box the detection is counted as a false positive.
 
-We want YOLO to have some notion of uncertainty in it's probability predictions. Instead of predicting 1-0 probabilities we can scale the target class probabilities by the IOU of the predicted bounding box with the ground truth box for a region. When YOLO predicts good bounding boxes it is also encouraged to predict high class probabilities. For poor bounding box predictions it learns to predict lower confidence probabilities.
+We want YOLO to have some notion of uncertainty in its probability predictions. Instead of predicting 1-0 probabilities we can scale the target class probabilities by the IOU of the predicted bounding box with the ground truth box for a region. When YOLO predicts good bounding boxes it is also encouraged to predict high class probabilities. For poor bounding box predictions it learns to predict lower confidence probabilities.
 
 We do not train to predict IOU from the beginning, only during the second stage of training. It is not necessary for good performance but it does boost our mean average precision by 3-4\%.
 
@@ -186,26 +186,6 @@ Just like in training, predicting detections for a test image only requires one 
 \textbf{Non-Maximal Suppression}
 
 The grid design enforces spatial diversity in the bounding box predictions. Often it is clear which grid cell an object falls in to and the network only predicts one box for each object. However, some large objects or objects near the border of multiple cells can be well localized by multiple cells. Non-maximal suppression can be used to fix these multiple detections. While not critical to performance as it is for R-CNN or DPM, non-maximal suppression adds 2-3\% in mAP.
-
-\subsection{Benefits and Limitations}
-
-\begin{figure}[th]
-\begin{center}
-        \includegraphics[width=.8\linewidth]{bird}
-\end{center}
-   \caption{\textbf{Global reasoning.} Our model makes local predictions but it reasons about the entire image. When multiple grid cells can predict good bounding boxes for an object, the model picks the best cell and downweights surrounding predictions. \textbf{Problems with small objects in groups.} The spatial constraint we impose restricts the model's ability to predict boxes for multiple small objects that are next to each other in an image. Our model cannot predict correct bounding boxes for multiple objects if they fall into the same grid cell.}
-\label{eagle}
-\end{figure}
-
-This model and architecture form a unified pipeline for object detection. It is simple to construct and can be trained directly on full images. Unlike classifier-based approaches, YOLO is trained on a loss function that directly corresponds to detection performance and every piece of the pipeline can be trained jointly.
-
-The network reasons about the entire image during inference which makes it less likely to predict background false positives than sliding window or proposal region detectors. Moreover, it predicts detections with only a single network evaluation, making it extremely fast.
-
-A cell is only responsible for objects centered in that cell so we restrict the coordinates to fall within that cell. This imposes a strong spatial constraint on the predictions which has both benefits and drawbacks. Cells rarely predict multiple bounding boxes for the same object.
-
-Conversely, this spatial constraint limits the number of nearby objects that our model can predict. If two objects fall into the same cell our model can only predict one of them. Our model struggles with small objects that appear in groups, such as flocks of birds.
-
-Finally, our loss function treats errors the same in small bounding boxes versus large bounding boxes. A small error in a large box is generally benign but a small error in a small box has a much greater effect on IOU. Our main source of error is incorrect localizations.
 
 %While this limits our performance on benchmarks like \textsc{Pascal}, it also mimics how humans visually percieve objects. Humans quickly count small numbers of objects ($N \le 4$) but take significantly more time per object to count larger groups of objects \cite{piazza2002subitizing}. This suggests that the human visual system can natively handle a small number of objects but after some threshold we require additional post-processing.
 
@@ -283,19 +263,18 @@ YOLO & 58.8 & 110 sec & 45 fps & - \\
 \caption{\textbf{Prediction Timing.} mAP and timing information for R-CNN, Fast R-CNN, and YOLO on the VOC 2007 test set. Timing information is given both as frames per second and the time each method takes to process the full 4952 image set. The final column shows the relative speed of YOLO compared to that method.}
 \end{table}
 
-At test time YOLO processes images at 45 frames per second. This is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still around 100x faster than Fast R-CNN.
+At test time YOLO processes images at 45 frames per second on an Nvidia Titan X. It is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still around 100x faster than Fast R-CNN.
 
 \subsection{VOC 2007 Error Analysis}
 \label{error}
-
-Using the methodology and tools of Hoiem et al. \cite{hoiem2012diagnosing} we analyze our performance on the VOC 2007 test set. We compare YOLO to Fast R-CNN using VGG-16, one of the highest performing object detectors.
-
 \begin{wrapfigure}{r}{.5\textwidth}
       \centering
         \includegraphics[width=\linewidth]{errors}
       \caption{\textbf{Error Analysis: Fast R-CNN vs. YOLO} These charts show the percentage of localization and background errors in the top N detections for various categories (N = \# objects in that category).}
       \label{errors}
    \end{wrapfigure}
+
+Using the methodology and tools of Hoiem et al. \cite{hoiem2012diagnosing} we analyze our performance on the VOC 2007 test set. We compare YOLO to Fast R-CNN using VGG-16, one of the highest performing object detectors.
 
 Figure \ref{errors} compares frequency of localization and background errors between Fast R-CNN and YOLO. A detection is considered a localization error if it overlaps a true positive in the image but by less than the required 50\% IOU. A detection is a background error if the box does not overlap any objects of any class in the image.
 
@@ -322,17 +301,28 @@ Fast R-CNN (CaffeNet) & 57.1  & 72.1 &  .3\\
 YOLO & 59.1  & 74.7 & 2.9\\
 \end{tabular}
 \end{center}
+\caption{\textbf{Model combination expermients on VOC 2007.} We examine the effect of combining various models with the best version of Fast R-CNN. The model's base mAP is listed as well as its mAP when combined with the top model on VOC 2007. Other versions of Fast R-CNN provides only a small marginal benefit while combining with YOLO results in a significant performance boost.}
 \label{combine}
-\caption{\textbf{Model combination expermients on VOC 2007.} }
 \end{table}
 
-The best Fast R-CNN model achieves a mAP of 71.8\% on the VOC 2007 test set. When combined with YOLO, its mAP increases by 2.9\% to 74.7\%. We also tried combining the top Fast R-CNN model with several other training versions of Fast R-CNN. Those ensembles produced small increases in mAP between .3 and .6\%, see table \ref{combine} for details.
+The best Fast R-CNN model achieves a mAP of 71.8\% on the VOC 2007 test set. When combined with YOLO, its mAP increases by 2.9\% to 74.7\%. We also tried combining the top Fast R-CNN model with several other versions of Fast R-CNN. Those ensembles produced small increases in mAP between .3 and .6\%, see table \ref{combine} for details. Thus, the benefit from combining Fast R-CNN with YOLO is unique, not a general property of combining models in this way.
 
 Using this combination strategy we achieve a significant boost on the VOC 2012 and 2010 test sets as well, around 2\%. The combined Fast R-CNN + YOLO model is the second highest performing model on the VOC 2012 leaderboard.
 
 \section{Conclusion}
 
-We introduce YOLO, a unified detection pipeline. YOLO is extremely fast and moderately accurate.
+We introduce YOLO, a unified pipeline for object detection. Our model is simple to construct and can be trained directly on full images. Unlike classifier-based approaches, YOLO is trained on a loss function that directly corresponds to detection performance and every piece of the pipeline can be trained jointly.
+
+The network reasons about the entire image during inference which makes it less likely to predict background false positives than sliding window or proposal region detectors. Moreover, it predicts detections with only a single network evaluation, making it extremely fast.
+
+YOLO achieves impressive performance on standard benchmarks considering it is 2-3 orders of magnitude faster than existing detection methods. It can also be used to rescore the bounding boxes produced by state-of-the-art methods like R-CNN for a significant boost in performance.
+
+%A cell is only responsible for objects centered in that cell so we restrict the coordinates to fall within that cell. This imposes a strong spatial constraint on the predictions which has both benefits and drawbacks. Cells rarely predict multiple bounding boxes for the same object.
+
+%Conversely, this spatial constraint limits the number of nearby objects that our model can predict. If two objects fall into the same cell our model can only predict one of them. Our model struggles with small objects that appear in groups, such as flocks of birds.
+
+%Finally, our loss function treats errors the same in small bounding boxes versus large bounding boxes. A small error in a large box is generally benign but a small error in a small box has a much greater effect on IOU. Our main source of error is incorrect localizations.
+
 
 {\small
 \bibliographystyle{ieee}
