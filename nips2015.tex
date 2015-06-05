@@ -307,7 +307,7 @@ YOLO uses global context to evaluate detections while R-CNN only sees small port
 
 \subsection{Combining Fast R-CNN and YOLO}
 
-YOLO makes far fewer background mistakes than R-CNN. With the right
+YOLO makes far fewer background mistakes than Fast R-CNN. By using YOLO to eliminate background detections from Fast R-CNN we get a significant boost in performance. For every bounding box that R-CNN predicts we check to see if YOLO predicts a similar box. If it does, we give that prediction a boost based on the probability predicted by YOLO and the overlap between the two boxes. This reorders the detections to favor those predicted by both systems. Since we still use Fast R-CNN's bounding box predictions we do not introduce any localization error. Thus we take advantage of the best aspects of both systems.
 
 \begin{table}
 \begin{center}
@@ -319,13 +319,20 @@ Fast R-CNN, No Augmentation & - & 71.8 & - \\
 Fast R-CNN (2007 data) & 66.9 & 72.4 & .6  \\
 Fast R-CNN (Small VGG) & 59.2 & 72.4 & .6 \\
 Fast R-CNN (CaffeNet) & 57.1  & 72.1 &  .3\\
-YOLO & 58.8  & 74.7 & 2.9\\
+YOLO & 59.1  & 74.7 & 2.9\\
 \end{tabular}
 \end{center}
-\caption{\textbf{Model combination expermients on VOC 2007.} Base mAP for several version of Fast R-CNN and YOLO, and their mAP when combined with the best performing Fast R-CNN model. YOLO produces the largest gain in mAP when combined with Fast R-CNN.}
+\label{combine}
+\caption{\textbf{Model combination expermients on VOC 2007.} }
 \end{table}
 
-\section{Discussion}
+The best Fast R-CNN model achieves a mAP of 71.8\% on the VOC 2007 test set. When combined with YOLO, its mAP increases by 2.9\% to 74.7\%. We also tried combining the top Fast R-CNN model with several other training versions of Fast R-CNN. Those ensembles produced small increases in mAP between .3 and .6\%, see table \ref{combine} for details.
+
+Using this combination strategy we achieve a significant boost on the VOC 2012 and 2010 test sets as well, around 2\%. The combined Fast R-CNN + YOLO model is the second highest performing model on the VOC 2012 leaderboard.
+
+\section{Conclusion}
+
+We introduce YOLO, a unified detection pipeline. YOLO is extremely fast and moderately accurate.
 
 {\small
 \bibliographystyle{ieee}
