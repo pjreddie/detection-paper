@@ -21,7 +21,6 @@
 Unified, Real-Time Object Detection}
 
 
-
 \author{Joseph Red\$\\
 University of Washington\\
 \texttt{pjreddie@cs.washington.edu}
@@ -246,7 +245,7 @@ SDS \cite{hariharan2014simultaneous}& 50.7 &  69.7 &  58.4 &  48.5 &  28.3 &  28
 R-CNN \cite{girshick2014rich}& 49.6 & 68.1 & 63.8 & 46.1 & 29.4 & 27.9 & 56.6 & 57.0 & 65.9 & 26.5 & 48.7 & 39.5 & 66.2 & 57.3 & 65.4 & 53.2 & 26.2 & 54.5 & 38.1 & 50.6 & 51.6 \\
 \end{tabularx}
 \end{center}
-\caption{\small \textbf{\textsc{Pascal} VOC 2012 Leaderboard.} YOLO compared with the full \texttt{comp4} (outside data allowed) public leaderboard as of June 5th, 2015. Mean average precision and per-class average precision are shown for a variety of detection methods. YOLO is the top detection method that is not based on the R-CNN detection framework. Fast R-CNN + YOLO is one of the top methods overall, with a 1.6\% boost over Fast R-CNN and the highest average precision in 6 out of 20 classes.}
+\caption{\small \textbf{\textsc{Pascal} VOC 2012 Leaderboard.} YOLO compared with the full \texttt{comp4} (outside data allowed) public leaderboard as of June 5th, 2015. Mean average precision and per-class average precision are shown for a variety of detection methods. YOLO is the top detection method that is not based on the R-CNN detection framework. Fast R-CNN + YOLO is one of the top methods overall, with a 1.6\% boost over Fast R-CNN and the highest average precision in 6 out of 20 classes.} \vspace{-.3cm}
 \label{results}
 \end{table}
 
@@ -302,8 +301,7 @@ YOLO uses global context to evaluate detections while R-CNN only sees small port
 
 \subsection{Combining Fast R-CNN and YOLO}
 
-\begin{wraptable}{r}{.5\textwidth}
-\scriptsize
+\begin{table}[t]
 \begin{center}
 \begin{tabular}{lrrr}
  & mAP & Combined & \% increase \\
@@ -318,7 +316,7 @@ YOLO & 59.1  & 74.7 & 2.9\\
 \end{center}
 \caption{\small \textbf{Model combination expermients on VOC 2007.} We examine the effect of combining various models with the best version of Fast R-CNN. The model's base mAP is listed as well as its mAP when combined with the top model on VOC 2007. Other versions of Fast R-CNN provides only a small marginal benefit while combining with YOLO results in a significant performance boost.}
 \label{combine}
-\end{wraptable}
+\end{table}
 
 YOLO makes far fewer background mistakes than Fast R-CNN. By using YOLO to eliminate background detections from Fast R-CNN we get a significant boost in performance. For every bounding box that R-CNN predicts we check to see if YOLO predicts a similar box. If it does, we give that prediction a boost based on the probability predicted by YOLO and the overlap between the two boxes. This reorders the detections to favor those predicted by both systems. Since we still use Fast R-CNN's bounding box predictions we do not introduce any localization error. Thus we take advantage of the best aspects of both systems.
 
