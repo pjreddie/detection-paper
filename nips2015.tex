@@ -17,8 +17,10 @@
 %\documentstyle[nips14submit_09,times,art10]{article} % For LaTeX 2.09
 
 
+\renewcommand{\baselinestretch}{0.96}
 \title{You Only Look Once: \\
 Unified, Real-Time Object Detection}
+
 
 
 \author{Joseph Red\$\\
@@ -119,7 +121,6 @@ The final output of our network is a $7 \times 7$ grid of predictions. Each grid
    \end{figure}
 
 \subsection{Training}
-
 %
 %   \begin{figure}[t]
 %      \centering
@@ -259,11 +260,12 @@ On the VOC 2012 test set we achieve 53.6 mAP. This is lower than the current sta
 
 \subsection{Speed}
 
-\begin{wraptable}{r}{.5\textwidth}
-\scriptsize
+At test time YOLO processes images at 45 frames per second on an Nvidia Titan X GPU. It is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still around 100x faster than Fast R-CNN. Table \ref{timing} shows a full comparison between multiple R-CNN and Fast R-CNN variants and YOLO.
+
+\begin{table}[h]
 \begin{center}
 \begin{tabular}{lrrrr}
- & mAP & Time & FPS & Run Time\\
+ & mAP & Prediction Time & FPS & Compared to YOLO\\
 \hline
 R-CNN (VGG-16) & 66.0 & 48.2 hr & 0.02 fps & 1500x \\
 FR-CNN (VGG-16) & 66.9 & 3.1 hr & 0.45 fps & 100x \\
@@ -276,15 +278,10 @@ YOLO & 58.8 & 110 sec & 45 fps & - \\
 \end{center}
 \caption{\textbf{Prediction Timing.} mAP and timing information for R-CNN, Fast R-CNN, and YOLO on the VOC 2007 test set. Timing information is given both as frames per second and the time each method takes to process the full 4952 image set. The final column shows the relative speed of YOLO compared to that method.}
 \label{timing}
-\end{wraptable}
-
-At test time YOLO processes images at 45 frames per second on an Nvidia Titan X GPU. It is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still around 100x faster than Fast R-CNN. Table \ref{timing} shows a full comparison between multiple R-CNN and Fast R-CNN variants and YOLO.
-
+\end{table}
 
 \subsection{VOC 2007 Error Analysis}
 \label{error}
-
-An object detector must have high recall for objects in the test set to obtain high performance. Our model imposes spatial constraints on bounding box predictions which limits recall on small objects that are close together. We examine how detrimental this is in practice by calculating our highest possible recall assuming perfect coordinate prediction. Under this assumption, our model can achieve a 93.1\% recall for objects in the VOC 2007 test set. This is lower than Selective Search (98.0\% \cite{uijlings2013selective}) but still relatively high.
 
 \begin{wrapfigure}{r}{.5\textwidth}
       \centering
@@ -292,6 +289,8 @@ An object detector must have high recall for objects in the test set to obtain h
       \caption{\textbf{Error Analysis: Fast R-CNN vs. YOLO} These charts show the percentage of localization and background errors in the top N detections for various categories (N = \# objects in that category).}
       \label{errors}
    \end{wrapfigure}
+
+An object detector must have high recall for objects in the test set to obtain high performance. Our model imposes spatial constraints on bounding box predictions which limits recall on small objects that are close together. We examine how detrimental this is in practice by calculating our highest possible recall assuming perfect coordinate prediction. Under this assumption, our model can achieve a 93.1\% recall for objects in the VOC 2007 test set. This is lower than Selective Search (98.0\% \cite{uijlings2013selective}) but still relatively high.
 
 Using the methodology and tools of Hoiem et al. \cite{hoiem2012diagnosing} we analyze our performance on the VOC 2007 test set. We compare YOLO to Fast R-CNN using VGG-16, one of the highest performing object detectors.
 
