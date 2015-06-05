@@ -253,16 +253,15 @@ We present detection results for the \textsc{Pascal} VOC 2012 dataset and compar
 
 \subsection{VOC 2012 Results}
 
-On the VOC 2012 test set we achieve 53.6 mAP. This is lower than the current state of the art, closer to R-CNN based methods that use AlexNet, see Table \ref{results}. Our system struggles with small objects compared to its closest competitors. On categories like \texttt{bottle}, \texttt{sheep}, and \texttt{tv/monitor} YOLO scores 8-10 percentage points lower than R-CNN or Feature Edit. However, on other categories like \texttt{cat} and \texttt{horse} YOLO achieves significantly higher performance. We further investigate the source of these performance disparities in section~\ref{error}.
+On the VOC 2012 test set we achieve 53.6 mAP. This is lower than the current state of the art, closer to R-CNN based methods that use AlexNet, see Table \ref{results}. Our system struggles with small objects compared to its closest competitors. On categories like \texttt{bottle}, \texttt{sheep}, and \texttt{tv/monitor} YOLO scores 8-10 percentage points lower than R-CNN or Feature Edit. However, on other categories like \texttt{cat} and \texttt{horse} YOLO achieves significantly higher performance. We further investigate the source of these performance disparities in Section~\ref{error}.
 
 \subsection{Speed}
 
-At test time YOLO processes images at 45 frames per second on an Nvidia Titan X GPU. It is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still around 100x faster than Fast R-CNN. Table \ref{timing} shows a full comparison between multiple R-CNN and Fast R-CNN variants and YOLO.
-
-\begin{table}[h]
+\begin{wraptable}{r}{.5\textwidth}
+\scriptsize
 \begin{center}
 \begin{tabular}{lrrrr}
- & mAP & Prediction Time & Images/Sec & Run Time\\
+ & mAP & Time & Images/Sec & Run Time\\
 \hline
 R-CNN (VGG-16) & 66.0 & 48.2 hr & 0.02 fps & 1500x \\
 Fast R-CNN (VGG-16) & 66.9 & 3.1 hr & 0.45 fps & 100x \\
@@ -275,7 +274,10 @@ YOLO & 58.8 & 110 sec & 45 fps & - \\
 \end{center}
 \caption{\textbf{Prediction Timing.} mAP and timing information for R-CNN, Fast R-CNN, and YOLO on the VOC 2007 test set. Timing information is given both as frames per second and the time each method takes to process the full 4952 image set. The final column shows the relative speed of YOLO compared to that method.}
 \label{timing}
-\end{table}
+\end{wraptable}
+
+At test time YOLO processes images at 45 frames per second on an Nvidia Titan X GPU. It is considerably faster than classifier-based methods with similar mAP. Normal R-CNN using AlexNet or the small VGG network take 400-500x longer to process images. The recently proposed Fast R-CNN shares convolutional features between the bounding boxes but still relies on selective search for bounding box proposals which accounts for the bulk of their processing time. YOLO is still around 100x faster than Fast R-CNN. Table \ref{timing} shows a full comparison between multiple R-CNN and Fast R-CNN variants and YOLO.
+
 
 \subsection{VOC 2007 Error Analysis}
 \label{error}
@@ -301,12 +303,11 @@ YOLO uses global context to evaluate detections while R-CNN only sees small port
 
 \subsection{Combining Fast R-CNN and YOLO}
 
-YOLO makes far fewer background mistakes than Fast R-CNN. By using YOLO to eliminate background detections from Fast R-CNN we get a significant boost in performance. For every bounding box that R-CNN predicts we check to see if YOLO predicts a similar box. If it does, we give that prediction a boost based on the probability predicted by YOLO and the overlap between the two boxes. This reorders the detections to favor those predicted by both systems. Since we still use Fast R-CNN's bounding box predictions we do not introduce any localization error. Thus we take advantage of the best aspects of both systems.
-
-\begin{table}[h]
+\begin{wraptable}{r}{.5\textwidth}
+\scriptsize
 \begin{center}
 \begin{tabular}{lrrr}
- & mAP & Combined mAP & \% Pt Increase \\
+ & mAP & Combined & \% increase \\
 \hline
 Fast R-CNN & - & 71.8 & - \\
 \hline
@@ -318,7 +319,9 @@ YOLO & 59.1  & 74.7 & 2.9\\
 \end{center}
 \caption{\textbf{Model combination expermients on VOC 2007.} We examine the effect of combining various models with the best version of Fast R-CNN. The model's base mAP is listed as well as its mAP when combined with the top model on VOC 2007. Other versions of Fast R-CNN provides only a small marginal benefit while combining with YOLO results in a significant performance boost.}
 \label{combine}
-\end{table}
+\end{wraptable}
+
+YOLO makes far fewer background mistakes than Fast R-CNN. By using YOLO to eliminate background detections from Fast R-CNN we get a significant boost in performance. For every bounding box that R-CNN predicts we check to see if YOLO predicts a similar box. If it does, we give that prediction a boost based on the probability predicted by YOLO and the overlap between the two boxes. This reorders the detections to favor those predicted by both systems. Since we still use Fast R-CNN's bounding box predictions we do not introduce any localization error. Thus we take advantage of the best aspects of both systems.
 
 The best Fast R-CNN model achieves a mAP of 71.8\% on the VOC 2007 test set. When combined with YOLO, its mAP increases by 2.9\% to 74.7\%. We also tried combining the top Fast R-CNN model with several other versions of Fast R-CNN. Those ensembles produced small increases in mAP between .3 and .6\%, see Table \ref{combine} for details. Thus, the benefit from combining Fast R-CNN with YOLO is unique, not a general property of combining models in this way.
 
