@@ -227,9 +227,9 @@ Our work is most similar in design to work on grasp detection by Redmon et al \c
 \textbf{VOC 2012 test} & mAP & aero & bike & bird & boat & bottle & bus & car & cat & chair & cow & table & dog & horse & mbike & person & plant & sheep & sofa & train & tv \\
 \hline
 MR\_CNN\_S\_CNN \cite{DBLP:journals/corr/GidarisK15}& 70.7& 85.0& 79.6& 71.5& 55.3& 57.7& 76.0& 73.9& 84.6& 50.5& 74.3& 61.7& 85.5& 79.9& 81.7& 76.4& 41.0& 69.0& 61.2& 77.7& 72.1 \\
-DEEP\_ENS\_COCO &  70.1& 84.0& 79.4& 71.6& 51.9& 51.1& 74.1& 72.1& 88.6& 48.3& 73.4& 57.8& 86.1& 80.0& 80.7& 70.4& 46.6& 69.6& 68.8& 75.9& 71.4 \\
 \rowcolor{Gray}
-\textbf{Fast R-CNN + YOLO} & 70.0 & 83.0 & 78.4 & 73.4 & 55.7 & 42.5 & 78.2 & 72.7 & 89.5 & 48.2 & 74.0 & 56.4 & 87.2 & 80.8 & 80.7 & 74.4 & 41.1 & 70.0 & 67.1 & 81.2 & 66.0 \\
+\textbf{Fast R-CNN + YOLO} & 70.4 & 83.0 & 78.5 & 73.7 & 55.8 & 43.1 & 78.3 & 73.0 & 89.2 & 49.1 & 74.3 & 56.6 & 87.2 & 80.5 & 80.5 & 74.7 & 42.1 & 70.8 & 68.2 & 81.5 & 67.0 \\
+DEEP\_ENS\_COCO &  70.1& 84.0& 79.4& 71.6& 51.9& 51.1& 74.1& 72.1& 88.6& 48.3& 73.4& 57.8& 86.1& 80.0& 80.7& 70.4& 46.6& 69.6& 68.8& 75.9& 71.4 \\
 NoC \cite{DBLP:journals/corr/RenHGZ015} &68.8& 82.8& 79.0& 71.6& 52.3& 53.7& 74.1& 69.0& 84.9& 46.9& 74.3& 53.1& 85.0& 81.3& 79.5& 72.2& 38.9& 72.4& 59.5& 76.7& 68.1\\
 Fast R-CNN \cite{DBLP:journals/corr/Girshick15}& 68.4 & 82.3 & 78.4 & 70.8 & 52.3 & 38.7 & 77.8 & 71.6 & 89.3 & 44.2 & 73.0 & 55.0 & 87.5 & 80.5 & 80.8 & 72.0 & 35.1 & 68.3 & 65.7 & 80.4 & 64.2 \\
 NUS\_NIN\_C2000 \cite{dong2014towards}& 63.8 & 80.2 & 73.8 &  61.9 &  43.7 &  43.0 &  70.3 &  67.6 &  80.7 &  41.9 &  69.7 &  51.7 &  78.2 &  75.2 &  76.9 &  65.1 &  38.6 &  68.3 &  58.0 &  68.7 &  63.3 \\
@@ -239,13 +239,13 @@ NUS\_NIN & 62.4 &  77.9 &  73.1 &  62.6 &  39.5 &  43.3 &  69.1 &  66.4 &  78.9 
 R-CNN VGG \cite{girshick2014rich}& 59.2 &  76.8 &  70.9 &  56.6 &  37.5 &  36.9 &  62.9 &  63.6 &  81.1 &  35.7 &  64.3 &  43.9 &  80.4 &  71.6 &  74.0 &  60.0 &  30.8 &  63.4 &  52.0 &  63.5 &  58.7 \\
 Feature Edit \cite{shen2014more}&  56.3 &  74.6 &  69.1 &  54.4 &  39.1 &  33.1 &  65.2 &  62.7 &  69.7 &  30.8 &  56.0 &  44.6 &  70.0 &  64.4 &  71.1 &  60.2 &  33.3 &  61.3 &  46.4 &  61.7 &  57.8 \\
 \rowcolor{Gray}
-\textbf{YOLO} & 53.6 & 71.6 & 62.2 & 55.2 & 35.9 & 23.2 & 62.4 & 53.7 & 78.1 & 34.0 & 52.9 & 38.7 & 72.2 & 67.3 & 66.3 & 62.1 & 25.5 & 50.0 & 46.9 & 67.4 & 46.3 \\
+\textbf{YOLO} & 54.5 & 71.5 & 64.2 & 54.1 & 35.3 & 23.3 & 61.0 & 54.4 & 78.1 & 35.3 & 56.9 & 40.9 & 72.4 & 68.6 & 68.0 & 62.5 & 26.0 & 51.9 & 48.8 & 68.7 & 47.2 \\
 R-CNN BB \cite{girshick2014rich}&  53.3 &  71.8 &  65.8 &  52.0 &  34.1 &  32.6 &  59.6 &  60.0 &  69.8 &  27.6 &  52.0 &  41.7 &  69.6 &  61.3 &  68.3 &  57.8 &  29.6 &  57.8 &  40.9 &  59.3 &  54.1 \\
 SDS \cite{hariharan2014simultaneous}& 50.7 &  69.7 &  58.4 &  48.5 &  28.3 &  28.8 &  61.3 &  57.5 &  70.8 &  24.1 &  50.7 &  35.9 &  64.9 &  59.1 &  65.8 &  57.1 &  26.0 &  58.8 &  38.6 &  58.9 &  50.7 \\
 R-CNN \cite{girshick2014rich}& 49.6 & 68.1 & 63.8 & 46.1 & 29.4 & 27.9 & 56.6 & 57.0 & 65.9 & 26.5 & 48.7 & 39.5 & 66.2 & 57.3 & 65.4 & 53.2 & 26.2 & 54.5 & 38.1 & 50.6 & 51.6 \\
 \end{tabularx}
 \end{center}
-\caption{\small \textbf{\textsc{Pascal} VOC 2012 Leaderboard.} YOLO compared with the full \texttt{comp4} (outside data allowed) public leaderboard as of June 5th, 2015. Mean average precision and per-class average precision are shown for a variety of detection methods. YOLO is the top detection method that is not based on the R-CNN detection framework. Fast R-CNN + YOLO is one of the top methods overall, with a 1.6\% boost over Fast R-CNN and the highest average precision in 6 out of 20 classes.} \vspace{-.3cm}
+\caption{\small \textbf{\textsc{Pascal} VOC 2012 Leaderboard.} YOLO compared with the full \texttt{comp4} (outside data allowed) public leaderboard as of June 6th, 2015. Mean average precision and per-class average precision are shown for a variety of detection methods. YOLO is the top detection method that is not based on the R-CNN detection framework. Fast R-CNN + YOLO is one of the top methods overall, with a 2\% boost over Fast R-CNN and the highest average precision in 6 out of 20 classes.} \vspace{-.3cm}
 \label{results}
 \end{table}
 
@@ -253,7 +253,7 @@ We present detection results for the \textsc{Pascal} VOC 2012 dataset and compar
 
 \subsection{VOC 2012 Results}
 
-On the VOC 2012 test set we achieve 53.6 mAP. This is lower than the current state of the art, closer to R-CNN based methods that use AlexNet, see Table \ref{results}. Our system struggles with small objects compared to its closest competitors. On categories like \texttt{bottle}, \texttt{sheep}, and \texttt{tv/monitor} YOLO scores 8-10 percentage points lower than R-CNN or Feature Edit. However, on other categories like \texttt{cat} and \texttt{horse} YOLO achieves significantly higher performance. We further investigate the source of these performance disparities in Section~\ref{error}.
+On the VOC 2012 test set we achieve 54.5 mAP. This is lower than the current state of the art, closer to R-CNN based methods that use AlexNet, see Table \ref{results}. Our system struggles with small objects compared to its closest competitors. On categories like \texttt{bottle}, \texttt{sheep}, and \texttt{tv/monitor} YOLO scores 8-10 percentage points lower than R-CNN or Feature Edit. However, on other categories like \texttt{cat} and \texttt{horse} YOLO achieves significantly higher performance. We further investigate the source of these performance disparities in Section~\ref{error}.
 
 \subsection{Speed}
 
@@ -322,7 +322,7 @@ YOLO makes far fewer background mistakes than Fast R-CNN. By using YOLO to elimi
 
 The best Fast R-CNN model achieves a mAP of 71.8\% on the VOC 2007 test set. When combined with YOLO, its mAP increases by 2.9\% to 74.7\%. We also tried combining the top Fast R-CNN model with several other versions of Fast R-CNN. Those ensembles produced small increases in mAP between .3 and .6\%, see Table \ref{combine} for details. Thus, the benefit from combining Fast R-CNN with YOLO is unique, not a general property of combining models in this way.
 
-Using this combination strategy we achieve a significant boost on the VOC 2012 and 2010 test sets as well, around 2\%. The combined Fast R-CNN + YOLO model performs on par with the best models on the VOC 2012 leaderboard.
+Using this combination strategy we achieve a significant boost on the VOC 2012 and 2010 test sets as well, around 2\%. The combined Fast R-CNN + YOLO model is currently the second highest performing model on the VOC 2012 leaderboard.
 
 \section{Conclusion}
 
