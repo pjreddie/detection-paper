@@ -1,0 +1,163 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{blaschko2008learning}
+M.~B. Blaschko and C.~H. Lampert.
+\newblock Learning to localize objects with structured output regression.
+\newblock In {\em Computer Vision--ECCV 2008}, pages 2--15. Springer, 2008.
+
+\bibitem{dalal2005histograms}
+N.~Dalal and B.~Triggs.
+\newblock Histograms of oriented gradients for human detection.
+\newblock In {\em Computer Vision and Pattern Recognition, 2005. CVPR 2005.
+  IEEE Computer Society Conference on}, volume~1, pages 886--893. IEEE, 2005.
+
+\bibitem{donahue2013decaf}
+J.~Donahue, Y.~Jia, O.~Vinyals, J.~Hoffman, N.~Zhang, E.~Tzeng, and T.~Darrell.
+\newblock Decaf: A deep convolutional activation feature for generic visual
+  recognition.
+\newblock {\em arXiv preprint arXiv:1310.1531}, 2013.
+
+\bibitem{dong2014towards}
+J.~Dong, Q.~Chen, S.~Yan, and A.~Yuille.
+\newblock Towards unified object detection and semantic segmentation.
+\newblock In {\em Computer Vision--ECCV 2014}, pages 299--314. Springer, 2014.
+
+\bibitem{erhan2014scalable}
+D.~Erhan, C.~Szegedy, A.~Toshev, and D.~Anguelov.
+\newblock Scalable object detection using deep neural networks.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2014 IEEE
+  Conference on}, pages 2155--2162. IEEE, 2014.
+
+\bibitem{Everingham15}
+M.~Everingham, S.~M.~A. Eslami, L.~Van~Gool, C.~K.~I. Williams, J.~Winn, and
+  A.~Zisserman.
+\newblock The pascal visual object classes challenge: A retrospective.
+\newblock {\em International Journal of Computer Vision}, 111(1):98--136, Jan.
+  2015.
+
+\bibitem{lsvm-pami}
+P.~F. Felzenszwalb, R.~B. Girshick, D.~McAllester, and D.~Ramanan.
+\newblock Object detection with discriminatively trained part based models.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  32(9):1627--1645, 2010.
+
+\bibitem{DBLP:journals/corr/GidarisK15}
+S.~Gidaris and N.~Komodakis.
+\newblock Object detection via a multi-region {\&} semantic segmentation-aware
+  {CNN} model.
+\newblock {\em CoRR}, abs/1505.01749, 2015.
+
+\bibitem{girshick2014rich}
+R.~Girshick, J.~Donahue, T.~Darrell, and J.~Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2014 IEEE
+  Conference on}, pages 580--587. IEEE, 2014.
+
+\bibitem{DBLP:journals/corr/Girshick15}
+R.~B. Girshick.
+\newblock Fast {R-CNN}.
+\newblock {\em CoRR}, abs/1504.08083, 2015.
+
+\bibitem{gould2009region}
+S.~Gould, T.~Gao, and D.~Koller.
+\newblock Region-based segmentation and object detection.
+\newblock In {\em Advances in neural information processing systems}, pages
+  655--663, 2009.
+
+\bibitem{hariharan2014simultaneous}
+B.~Hariharan, P.~Arbel{\'a}ez, R.~Girshick, and J.~Malik.
+\newblock Simultaneous detection and segmentation.
+\newblock In {\em Computer Vision--ECCV 2014}, pages 297--312. Springer, 2014.
+
+\bibitem{DBLP:journals/corr/HeZR015}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun.
+\newblock Delving deep into rectifiers: Surpassing human-level performance on
+  imagenet classification.
+\newblock {\em CoRR}, abs/1502.01852, 2015.
+
+\bibitem{hinton2012improving}
+G.~E. Hinton, N.~Srivastava, A.~Krizhevsky, I.~Sutskever, and R.~R.
+  Salakhutdinov.
+\newblock Improving neural networks by preventing co-adaptation of feature
+  detectors.
+\newblock {\em arXiv preprint arXiv:1207.0580}, 2012.
+
+\bibitem{hoiem2012diagnosing}
+D.~Hoiem, Y.~Chodpathumwan, and Q.~Dai.
+\newblock Diagnosing error in object detectors.
+\newblock In {\em Computer Vision--ECCV 2012}, pages 340--353. Springer, 2012.
+
+\bibitem{lienhart2002extended}
+R.~Lienhart and J.~Maydt.
+\newblock An extended set of haar-like features for rapid object detection.
+\newblock In {\em Image Processing. 2002. Proceedings. 2002 International
+  Conference on}, volume~1, pages I--900. IEEE, 2002.
+
+\bibitem{DBLP:journals/corr/LinCY13}
+M.~Lin, Q.~Chen, and S.~Yan.
+\newblock Network in network.
+\newblock {\em CoRR}, abs/1312.4400, 2013.
+
+\bibitem{lowe1999object}
+D.~G. Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In {\em Computer vision, 1999. The proceedings of the seventh IEEE
+  international conference on}, volume~2, pages 1150--1157. Ieee, 1999.
+
+\bibitem{papageorgiou1998general}
+C.~P. Papageorgiou, M.~Oren, and T.~Poggio.
+\newblock A general framework for object detection.
+\newblock In {\em Computer vision, 1998. sixth international conference on},
+  pages 555--562. IEEE, 1998.
+
+\bibitem{DBLP:journals/corr/RedmonA14}
+J.~Redmon and A.~Angelova.
+\newblock Real-time grasp detection using convolutional neural networks.
+\newblock {\em CoRR}, abs/1412.3128, 2014.
+
+\bibitem{DBLP:journals/corr/RenHGZ015}
+S.~Ren, K.~He, R.~B. Girshick, X.~Zhang, and J.~Sun.
+\newblock Object detection networks on convolutional feature maps.
+\newblock {\em CoRR}, abs/1504.06066, 2015.
+
+\bibitem{ILSVRC15}
+O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
+  A.~Karpathy, A.~Khosla, M.~Bernstein, A.~C. Berg, and L.~Fei-Fei.
+\newblock {ImageNet Large Scale Visual Recognition Challenge}.
+\newblock {\em International Journal of Computer Vision (IJCV)}, 2015.
+
+\bibitem{DBLP:journals/corr/SermanetEZMFL13}
+P.~Sermanet, D.~Eigen, X.~Zhang, M.~Mathieu, R.~Fergus, and Y.~LeCun.
+\newblock Overfeat: Integrated recognition, localization and detection using
+  convolutional networks.
+\newblock {\em CoRR}, abs/1312.6229, 2013.
+
+\bibitem{shen2014more}
+Z.~Shen and X.~Xue.
+\newblock Do more dropouts in pool5 feature maps for better object detection.
+\newblock {\em arXiv preprint arXiv:1409.6911}, 2014.
+
+\bibitem{DBLP:journals/corr/SzegedyLJSRAEVR14}
+C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
+  V.~Vanhoucke, and A.~Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock {\em CoRR}, abs/1409.4842, 2014.
+
+\bibitem{uijlings2013selective}
+J.~R. Uijlings, K.~E. van~de Sande, T.~Gevers, and A.~W. Smeulders.
+\newblock Selective search for object recognition.
+\newblock {\em International journal of computer vision}, 104(2):154--171,
+  2013.
+
+\bibitem{viola2001robust}
+P.~Viola and M.~Jones.
+\newblock Robust real-time object detection.
+\newblock {\em International Journal of Computer Vision}, 4:34--47, 2001.
+
+\bibitem{zitnick2014edge}
+C.~L. Zitnick and P.~Doll{\'a}r.
+\newblock Edge boxes: Locating object proposals from edges.
+\newblock In {\em Computer Vision--ECCV 2014}, pages 391--405. Springer, 2014.
+
+\end{thebibliography}

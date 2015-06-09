@@ -1,0 +1,2149 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.6.3)  9 JUN 2015 00:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**nips2015.tex
+(./nips2015.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, fa
+rsi, arabic, slovak, czech, danish, dutch, french, basque, bengali, tamil, hind
+i, telugu, gujarati, sanskrit, malayalam, kannada, assamese, marathi, oriya, pa
+njabi, italian, latvian, indonesian, esperanto, coptic, welsh, irish, interling
+ua, serbian, serbianc, slovenian, friulan, romansh, estonian, romanian, armenia
+n, uppersorbian, turkish, afrikaans, icelandic, kurmanji, thai, loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./nips15submit_e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count87
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+\nipsrulerbox=\box26
+\nipsrulercount=\count88
+\nipsruleroffset=\dimen103
+\cv@lineheight=\dimen104
+\cv@boxheight=\dimen105
+\cv@tmpbox=\box27
+\cv@refno=\count89
+\cv@tot=\count90
+\cv@tmpc@=\count91
+\cv@tmpc=\count92
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen106
+\Hy@linkcounter=\count93
+\Hy@pagecounter=\count94
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count95
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count96
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count97
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count98
+\c@Item=\count99
+\c@Hfootnote=\count100
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count101
+\c@bookmark@seq@number=\count102
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip43
+)
+(./relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen109
+\extrarowheight=\dimen110
+\NC@list=\toks15
+\extratabsurround=\skip44
+\backup@length=\skip45
+)
+\everycr=\toks16
+\minrowclearance=\skip46
+) (./multirow.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+\epsfxsize=\dimen113
+\epsfysize=\dimen114
+)
+(./wrapfig.sty
+\wrapoverhang=\dimen115
+\WF@size=\dimen116
+\c@WF@wrappedlines=\count103
+\WF@box=\box28
+\WF@everypar=\toks17
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen117
+\captionmargin@=\dimen118
+\captionwidth=\dimen119
+\caption@indent=\dimen120
+\caption@parindent=\dimen121
+\caption@hangindent=\dimen122
+)
+\c@ContinuedFloat=\count104
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+\TX@col@width=\dimen123
+\TX@old@table=\dimen124
+\TX@old@col=\dimen125
+\TX@target=\dimen126
+\TX@delta=\dimen127
+\TX@cols=\count105
+\TX@ftn=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip47
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks19
+\ex@=\dimen128
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen129
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count106
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count107
+\leftroot@=\count108
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count109
+\DOTSCASE@=\count110
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen130
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count111
+\c@MaxMatrixCols=\count112
+\dotsspace@=\muskip11
+\c@parentequation=\count113
+\dspbrk@lvl=\count114
+\tag@help=\toks20
+\row@=\count115
+\column@=\count116
+\maxfields@=\count117
+\andhelp@=\toks21
+\eqnshift@=\dimen131
+\alignsep@=\dimen132
+\tagshift@=\dimen133
+\tagwidth@=\dimen134
+\totwidth@=\dimen135
+\lineht@=\dimen136
+\@envbody=\toks22
+\multlinegap=\skip48
+\multlinetaggap=\skip49
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(./nips2015.aux)
+\openout1 = `nips2015.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 60.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\AtBeginShipoutBox=\box31
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count118
+\scratchdimen=\dimen137
+\scratchbox=\box32
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen138
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks25
+)
+Package hyperref Info: Link coloring OFF on input line 60.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count124
+)
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
+
+(./nips2015.out) (./nips2015.out)
+\@outlinefile=\write3
+\openout3 = `nips2015.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 64.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+
+<system.pdf, id=67, 633.10527pt x 129.1485pt>
+File: system.pdf Graphic file (type pdf)
+ <use system.pdf>
+Package pdftex.def Info: system.pdf used on input line 80.
+(pdftex.def)             Requested size: 397.48499pt x 81.08414pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<full.pdf, id=82, 2127.95pt x 568.96065pt>
+File: full.pdf Graphic file (type pdf)
+ <use full.pdf>
+Package pdftex.def Info: full.pdf used on input line 100.
+(pdftex.def)             Requested size: 397.48499pt x 106.27182pt.
+ [2 <./system.pdf> <./full.pdf
+
+pdfTeX warning: pdflatex (file ./full.pdf): PDF inclusion: multiple pdfs with p
+age group included in a single page
+>] <net.pdf, id=211, 2562.49338pt x 964.58665pt>
+File: net.pdf Graphic file (type pdf)
+ <use net.pdf>
+Package pdftex.def Info: net.pdf used on input line 117.
+(pdftex.def)             Requested size: 397.48499pt x 149.61241pt.
+ [3 <./net.pdf>]
+LaTeX Font Info:    Calculating math sizes for size <11.99997> on input line 15
+3.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 153.
+
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [4] [5]
+Overfull \hbox (2.50015pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 mAP| 
+ []
+
+
+Overfull \hbox (3.83206pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 bottle| 
+ []
+
+
+Overfull \hbox (2.15811pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 chair| 
+ []
+
+
+Overfull \hbox (1.82808pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 table| 
+ []
+
+
+Overfull \hbox (3.16016pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 horse| 
+ []
+
+
+Overfull \hbox (5.10413pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 mbike| 
+ []
+
+
+Overfull \hbox (6.16016pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 person| 
+ []
+
+
+Overfull \hbox (2.16412pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 plant| 
+ []
+
+
+Overfull \hbox (3.82614pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 sheep| 
+ []
+
+
+Overfull \hbox (1.1621pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 train| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 70.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 85.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 79.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 55.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 57.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 76.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 73.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 84.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 50.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 74.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 61.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 85.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 79.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 81.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 76.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 41.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 77.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 72.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 83.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 78.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 73.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 55.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 43.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 78.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 73.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 89.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 49.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 74.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 87.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 42.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 81.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 67.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 84.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 79.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 51.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 51.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 72.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 88.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 48.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 73.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 86.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 46.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 68.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 75.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 82.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 79.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 52.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 53.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 84.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 46.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 74.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 53.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 85.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 81.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 79.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 72.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 72.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 59.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 76.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 82.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 78.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 52.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 77.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 89.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 44.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 73.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 55.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/b/n/6 87.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 72.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 73.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 43.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 43.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 67.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 41.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 51.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 78.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 75.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 76.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 58.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 78.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 45.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 42.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 66.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 40.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 49.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 79.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 77.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 67.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 55.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 79.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 72.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 41.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 41.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 66.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 84.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 67.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 46.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 82.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 76.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 67.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 60.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 77.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 73.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 39.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 43.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 66.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 78.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 39.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 50.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 77.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 76.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 66.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 66.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 59.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 76.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 37.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 36.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 81.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 43.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 80.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 60.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 30.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 52.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 58.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 74.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 39.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 33.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 30.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 44.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 60.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 33.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 46.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 23.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 78.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 40.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 72.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 62.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 26.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 51.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 48.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 47.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 53.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 71.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 52.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 34.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 32.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 59.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 60.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 27.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 52.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 41.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 29.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 40.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 59.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 50.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 69.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 58.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 48.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 28.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 28.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 61.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 70.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 24.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 50.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 35.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 64.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 59.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 26.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 58.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 58.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 50.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 49.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 68.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 63.8| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 46.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 29.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 27.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 56.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.0| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.9| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 26.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 48.7| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 39.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 66.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 57.3| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 65.4| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 53.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 26.2| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 54.5| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 38.1| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 50.6| 
+ []
+
+
+Overfull \hbox (0.66429pt too wide) in paragraph at lines 247--247
+ []|\OT1/ptm/m/n/6 51.6| 
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 249.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+<errors.pdf, id=401, 337.26pt x 201.41951pt>
+File: errors.pdf Graphic file (type pdf)
+ <use errors.pdf>
+Package pdftex.def Info: errors.pdf used on input line 286.
+(pdftex.def)             Requested size: 198.7425pt x 118.6951pt.
+ [7 <./errors.pdf>] (./nips2015.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
+
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+ (./nips2015.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package rerunfilecheck Info: File `nips2015.out' has not changed.
+(rerunfilecheck)             Checksum: 8B54F09DA327E975BBDAA00E08632D1E;941.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
+ ) 
+Here is how much of TeX's memory you used:
+ 7968 strings out of 494317
+ 116449 string characters out of 3163376
+ 285402 words of memory out of 3000000
+ 10998 multiletter control sequences out of 15000+200000
+ 36217 words of font info for 88 fonts, out of 3000000 for 9000
+ 442 hyphenation exceptions out of 8191
+ 37i,11n,39p,1022b,459s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/pjreddie/.
+texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk> </home/pjreddie/.texmf-var/fo
+nts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on nips2015.pdf (9 pages, 5492612 bytes).
+PDF statistics:
+ 530 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Unified Detection}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Design}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Training}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Parameterizing Class Probabilities}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Predicting IOU}{subsection.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{Inference}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{Limitations of YOLO}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Comparison to Other Detection Systems}{}% 9
+\BOOKMARK [1][-]{section.4}{Experiments}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{VOC 2012 Results}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Speed}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.3}{VOC 2007 Error Analysis}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.4}{Combining Fast R-CNN and YOLO}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 15

@@ -1,0 +1,120 @@
+\relax 
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\citation{DBLP:journals/corr/HeZR015}
+\citation{lsvm-pami}
+\citation{girshick2014rich}
+\citation{uijlings2013selective}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \relax \fontsize  {9}{10pt}\selectfont  \textbf  {The YOLO Detection System.} Processing images with YOLO is simple and straightforward. Our system (1) resizes the input image to $448 \times 448$, (2) runs a single convolutional network on the image, and (3) thresholds the resulting detections by the model's confidence.\relax }}{2}{figure.caption.1}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{system}{{1}{2}{\small \textbf {The YOLO Detection System.} Processing images with YOLO is simple and straightforward. Our system (1) resizes the input image to $448 \times 448$, (2) runs a single convolutional network on the image, and (3) thresholds the resulting detections by the model's confidence.\relax \relax }{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Unified Detection}{2}{section.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {The Model.} Our system models detection as a regression problem to a $7 \times 7 \times 24$ tensor. This tensor encodes bounding boxes and class probabilities for all objects in the image.\relax }}{2}{figure.caption.2}}
+\newlabel{model}{{2}{2}{\textbf {The Model.} Our system models detection as a regression problem to a $7 \times 7 \times 24$ tensor. This tensor encodes bounding boxes and class probabilities for all objects in the image.\relax \relax }{figure.caption.2}{}}
+\citation{Everingham15}
+\citation{DBLP:journals/corr/SzegedyLJSRAEVR14}
+\citation{DBLP:journals/corr/LinCY13}
+\citation{ILSVRC15}
+\citation{DBLP:journals/corr/RenHGZ015}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \relax \fontsize  {9}{10pt}\selectfont  \textbf  {The Architecture.} Our detection network has 24 convolutional layers followed by 2 fully connected layers. The network uses strided convolutional layers to downsample the feature space instead of maxpooling layers. Alternating $1 \times 1$ convolutional layers reduce the features space from preceding layers. We pretrain the convolutional layers on the ImageNet classification task at half the resolution ($224 \times 224$ input image) and then double the resolution for detection.\relax }}{3}{figure.caption.3}}
+\newlabel{net}{{3}{3}{\small \textbf {The Architecture.} Our detection network has 24 convolutional layers followed by 2 fully connected layers. The network uses strided convolutional layers to downsample the feature space instead of maxpooling layers. Alternating $1 \times 1$ convolutional layers reduce the features space from preceding layers. We pretrain the convolutional layers on the ImageNet classification task at half the resolution ($224 \times 224$ input image) and then double the resolution for detection.\relax \relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Design}{3}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Training}{3}{subsection.2.2}}
+\citation{hinton2012improving}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Parameterizing Class Probabilities}{4}{subsubsection.2.2.1}}
+\citation{papageorgiou1998general}
+\citation{lowe1999object}
+\citation{dalal2005histograms}
+\citation{donahue2013decaf}
+\citation{viola2001robust}
+\citation{lienhart2002extended}
+\citation{girshick2014rich}
+\citation{lsvm-pami}
+\citation{blaschko2008learning}
+\citation{DBLP:journals/corr/SermanetEZMFL13}
+\citation{uijlings2013selective}
+\citation{gould2009region}
+\citation{zitnick2014edge}
+\citation{lsvm-pami}
+\citation{uijlings2013selective}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Predicting IOU}{5}{subsubsection.2.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Inference}{5}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Limitations of YOLO}{5}{subsection.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Comparison to Other Detection Systems}{5}{section.3}}
+\citation{girshick2014rich}
+\citation{erhan2014scalable}
+\citation{DBLP:journals/corr/SermanetEZMFL13}
+\citation{DBLP:journals/corr/RedmonA14}
+\citation{DBLP:journals/corr/GidarisK15}
+\citation{DBLP:journals/corr/RenHGZ015}
+\citation{DBLP:journals/corr/Girshick15}
+\citation{dong2014towards}
+\citation{dong2014towards}
+\citation{girshick2014rich}
+\citation{girshick2014rich}
+\citation{shen2014more}
+\citation{girshick2014rich}
+\citation{hariharan2014simultaneous}
+\citation{girshick2014rich}
+\citation{DBLP:journals/corr/Girshick15}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \relax \fontsize  {9}{10pt}\selectfont  \textbf  {\textsc  {Pascal} VOC 2012 Leaderboard.} YOLO compared with the full \texttt  {comp4} (outside data allowed) public leaderboard as of June 6th, 2015. Mean average precision and per-class average precision are shown for a variety of detection methods. YOLO is the top detection method that is not based on the R-CNN detection framework. Fast R-CNN + YOLO is the second highest scoring method, with a 2\% boost over Fast R-CNN.\relax }}{6}{table.caption.4}}
+\newlabel{results}{{1}{6}{\small \textbf {\textsc {Pascal} VOC 2012 Leaderboard.} YOLO compared with the full \texttt {comp4} (outside data allowed) public leaderboard as of June 6th, 2015. Mean average precision and per-class average precision are shown for a variety of detection methods. YOLO is the top detection method that is not based on the R-CNN detection framework. Fast R-CNN + YOLO is the second highest scoring method, with a 2\% boost over Fast R-CNN.\relax \relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{6}{section.4}}
+\citation{uijlings2013selective}
+\citation{hoiem2012diagnosing}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}VOC 2012 Results}{7}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Speed}{7}{subsection.4.2}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \relax \fontsize  {9}{10pt}\selectfont  \textbf  {Prediction Timing.} mAP and timing information for R-CNN, Fast R-CNN, and YOLO on the VOC 2007 test set. Timing information is given both as frames per second and the time each method takes to process the full 4952 image set. The final column shows the relative speed of YOLO compared to that method.\relax }}{7}{table.caption.5}}
+\newlabel{timing}{{2}{7}{\small \textbf {Prediction Timing.} mAP and timing information for R-CNN, Fast R-CNN, and YOLO on the VOC 2007 test set. Timing information is given both as frames per second and the time each method takes to process the full 4952 image set. The final column shows the relative speed of YOLO compared to that method.\relax \relax }{table.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}VOC 2007 Error Analysis}{7}{subsection.4.3}}
+\newlabel{error}{{4.3}{7}{VOC 2007 Error Analysis\relax }{subsection.4.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \relax \fontsize  {9}{10pt}\selectfont  \textbf  {Error Analysis: Fast R-CNN vs. YOLO} These charts show the percentage of localization and background errors in the top N detections for various categories (N = \# objects in that category).\relax }}{7}{figure.caption.6}}
+\newlabel{errors}{{4}{7}{\small \textbf {Error Analysis: Fast R-CNN vs. YOLO} These charts show the percentage of localization and background errors in the top N detections for various categories (N = \# objects in that category).\relax \relax }{figure.caption.6}{}}
+\bibstyle{ieee}
+\bibdata{egbib}
+\bibcite{blaschko2008learning}{1}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \relax \fontsize  {9}{10pt}\selectfont  \textbf  {Model combination expermients on VOC 2007.} We examine the effect of combining various models with the best version of Fast R-CNN. The model's base mAP is listed as well as its mAP when combined with the top model on VOC 2007. Other versions of Fast R-CNN provides only a small marginal benefit while combining with YOLO results in a significant performance boost.\relax }}{8}{table.caption.7}}
+\newlabel{combine}{{3}{8}{\small \textbf {Model combination expermients on VOC 2007.} We examine the effect of combining various models with the best version of Fast R-CNN. The model's base mAP is listed as well as its mAP when combined with the top model on VOC 2007. Other versions of Fast R-CNN provides only a small marginal benefit while combining with YOLO results in a significant performance boost.\relax \relax }{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Combining Fast R-CNN and YOLO}{8}{subsection.4.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}}
+\bibcite{dalal2005histograms}{2}
+\bibcite{donahue2013decaf}{3}
+\bibcite{dong2014towards}{4}
+\bibcite{erhan2014scalable}{5}
+\bibcite{Everingham15}{6}
+\bibcite{lsvm-pami}{7}
+\bibcite{DBLP:journals/corr/GidarisK15}{8}
+\bibcite{girshick2014rich}{9}
+\bibcite{DBLP:journals/corr/Girshick15}{10}
+\bibcite{gould2009region}{11}
+\bibcite{hariharan2014simultaneous}{12}
+\bibcite{DBLP:journals/corr/HeZR015}{13}
+\bibcite{hinton2012improving}{14}
+\bibcite{hoiem2012diagnosing}{15}
+\bibcite{lienhart2002extended}{16}
+\bibcite{DBLP:journals/corr/LinCY13}{17}
+\bibcite{lowe1999object}{18}
+\bibcite{papageorgiou1998general}{19}
+\bibcite{DBLP:journals/corr/RedmonA14}{20}
+\bibcite{DBLP:journals/corr/RenHGZ015}{21}
+\bibcite{ILSVRC15}{22}
+\bibcite{DBLP:journals/corr/SermanetEZMFL13}{23}
+\bibcite{shen2014more}{24}
+\bibcite{DBLP:journals/corr/SzegedyLJSRAEVR14}{25}
+\bibcite{uijlings2013selective}{26}
+\bibcite{viola2001robust}{27}
+\bibcite{zitnick2014edge}{28}
